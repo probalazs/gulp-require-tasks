@@ -27,5 +27,10 @@
     "gulp": "^3.9.1",
     "lodash": "^4.6.1",
     "require-directory": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-pb-base": "probalazs/eslint-config-pb-base",
+    "eslint-config-pb-es6": "probalazs/eslint-config-pb-es6"
   }
 }
