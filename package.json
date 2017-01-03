@@ -1,11 +1,11 @@
 {
   "name": "gulp-require-tasks",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Loads Gulp tasks from the multiple individual files",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/betsol/gulp-require-tasks.git"
+    "url": "git+https://github.com/probalazs/gulp-require-tasks.git"
   },
   "keywords": [
     "gulp",
@@ -17,14 +17,13 @@
     "recursive",
     "load"
   ],
-  "author": "Slava Fomin <s.fomin@betsol.ru>",
+  "author": "probalazs@nyenyere.eu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/betsol/gulp-require-tasks/issues"
+    "url": "https://github.com/probalazs/gulp-require-tasks/issues"
   },
-  "homepage": "https://github.com/betsol/gulp-require-tasks#readme",
+  "homepage": "https://github.com/probalazs/gulp-require-tasks#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
     "lodash": "^4.6.1",
     "require-directory": "^2.1.1"
   },
