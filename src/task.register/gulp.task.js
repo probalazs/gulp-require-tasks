@@ -19,11 +19,11 @@ module.exports = class GulpTask {
     }
 
     get deps() {
-        return (this._hasDeps()) ? [] : _.clone(this._module.dep);
+        return (this._hasDeps()) ? _.clone(this._module.dep) : [];
     }
 
     _hasDeps() {
-        return _.isUndefined(this._module.dep);
+        return _.isArray(this._module.exports.dep);
     }
 
     get fn() {
