@@ -16,7 +16,7 @@ module.exports = class TaskRegister {
     _loadTasksFrom(folder) {
         requireDirectory(module, folder, {
             visit: (loadedModule, modulePath) => this._loadTask({
-                content: loadedModule,
+                exports: loadedModule,
                 path: modulePath,
                 baseFolder: folder
             })
