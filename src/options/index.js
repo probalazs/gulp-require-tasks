@@ -6,7 +6,6 @@ const validator = require('./validator');
 
 const DEFAULT_OPTIONS = Object.freeze({
     separator: ':',
-    arguments: [],
     path: [path.join(process.cwd(), 'gulp-tasks')]
 });
 
@@ -14,10 +13,6 @@ module.exports = class Options {
     constructor(optionsInput) {
         this._options = this._getOptions(optionsInput);
         validator.validate(this._options);
-    }
-
-    get arguments() {
-        return _.clone(this._options.arguments);
     }
 
     get separator() {
