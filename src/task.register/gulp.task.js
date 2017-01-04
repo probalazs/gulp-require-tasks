@@ -52,6 +52,6 @@ module.exports = class GulpTask {
         const fn = (this._isTaskExportedFromModule()) ?
             this._module.content :
             this._module.content.fn.bind(this._module.content);
-        return (callback) => fn.bind(null, gulp, callback);
+        return (callback) => fn(gulp, callback);
     }
 };
